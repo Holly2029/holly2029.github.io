@@ -8,6 +8,6 @@
 
 ## 个人成果
 
-![背景图](D:\website of holly\背景图.jpg)
+![](images/背景图.jpg)
 
 Note: 这是一个演示文档。
