@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>为什么预测很难准确？避不开的非样本问题 | The world in Holly&#39;s eyes</title>
+<link rel="shortcut icon" href="https://holly2029.github.io/favicon.ico?v=1613971099191">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://holly2029.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="为什么预测很难准确？避不开的非样本问题 | The world in Holly&#39;s eyes - Atom Feed" href="https://holly2029.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="《信号与噪声》读书笔记：利用贝叶斯定理提高预测的准确率
+
+
+0 前言
+前两天整理书单，在图书馆借了本西尔弗的《信号与噪声》来看，大致内容是如何避开大数据里的噪声进行预测。尽管书有点旧，很多观点倒是很有意思。
+1 人类比其他动物更需要发现模式..." />
+    <meta name="keywords" content="管理学" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://holly2029.github.io">
+  <img class="avatar" src="https://holly2029.github.io/images/avatar.png?v=1613971099191" alt="">
+  </a>
+  <h1 class="site-title">
+    The world in Holly&#39;s eyes
+  </h1>
+  <p class="site-description">
+    这是一个关注管理学和传播学的个人网页，提供一个商科硕士的学习成果和经验总结。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://holly2029.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/tags" class="menu">
+          文章记录
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/index" class="menu">
+          关于作者
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/lei-di-xing-xing" class="menu">
+          成果展示
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              为什么预测很难准确？避不开的非样本问题
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-02-22
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://holly2029.github.io/tag/GpxvM8sQl/" class="post-tag">
+                  # 管理学
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>《信号与噪声》读书笔记：利用贝叶斯定理提高预测的准确率</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://holly2029.github.io/post-images/1613968932221.jpg" alt="" loading="lazy"></figure>
+<h3 id="0-前言">0 前言</h3>
+<p>前两天整理书单，在图书馆借了本西尔弗的《信号与噪声》来看，大致内容是如何避开大数据里的噪声进行预测。尽管书有点旧，很多观点倒是很有意思。</p>
+<h3 id="1-人类比其他动物更需要发现模式">1 人类比其他动物更需要发现模式</h3>
+<p>人们向来对在复杂情境中的概括能力引以为豪，我们对于“下一刻会发生什么”倍加关注，努力从随机噪声（即无规律的状况）中发现模式。</p>
+<p>这种概括能力是预测的基础，也是预测试图解决的现实问题。我们每时每秒都在对未来将要发生的事情以及计划的成功概率进行预测。</p>
+<h3 id="2-使用贝叶斯定理进行预测">2 使用贝叶斯定理进行预测</h3>
+<p>我们无法做出完全客观的预测， 但贝叶斯定理可以提高预测的准确率。贝叶斯定理名义上是一个数学公式，但更像是一种打破锚定思维的思路。</p>
+<p>贝叶斯定理需要我们坦然面对各种可能性和不确定性，从不同角度思考我们的想法，以不同方式检验我们的想法。换句话说，就是关注和之前预测相反的事件，反复发现证据，更新你的预测。</p>
+<h3 id="3-失败的预测非样本问题">3 失败的预测：非样本问题</h3>
+<p>最失败的预测通常只关注符合我们期许的信息，而不在乎其真实性和全面性。现实往往是多维、复杂的，我们所作的各种预估要比现实状况简单得多。人们通常不愿意考虑“非样本”中存在的问题，因为这意味着我们会遇到一些并不熟悉的情境。</p>
+<p>**究竟什么是非样本呢？**非典型样本是一种因归纳过程中所使用的的样本在考察对象的总体中并不具有代表性所引起的谬误。这引导预测走向精确和准确的两个不同结果。如果你的样本不能代表你的研究问题，哪怕研究过程再严谨，样本量再大，何来准确性而言？</p>
+<p>西尔弗举了一个简单却生动的例子来分辨非样本问题。一位驾龄30年，安全出行20000次的司机在聚会上喝得醉醺醺，突发奇想自己开车回家。对于这次驾车的风险，应该以什么为样本计算呢？</p>
+<p>人们通常会以20000次的安全出行记录为自己醉驾的安全性做保证，但问题在于，20000次的安全出行记录里，没有哪一次是醉酒驾车的。因此，司机的醉驾样本是0次，而不是20000次。这就是非样本问题。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#0-%E5%89%8D%E8%A8%80">0 前言</a></li>
+<li><a href="#1-%E4%BA%BA%E7%B1%BB%E6%AF%94%E5%85%B6%E4%BB%96%E5%8A%A8%E7%89%A9%E6%9B%B4%E9%9C%80%E8%A6%81%E5%8F%91%E7%8E%B0%E6%A8%A1%E5%BC%8F">1 人类比其他动物更需要发现模式</a></li>
+<li><a href="#2-%E4%BD%BF%E7%94%A8%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86%E8%BF%9B%E8%A1%8C%E9%A2%84%E6%B5%8B">2 使用贝叶斯定理进行预测</a></li>
+<li><a href="#3-%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%A2%84%E6%B5%8B%E9%9D%9E%E6%A0%B7%E6%9C%AC%E9%97%AE%E9%A2%98">3 失败的预测：非样本问题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://holly2029.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
