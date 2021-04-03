@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>5分钟了解机器学习 | The world in Holly&#39;s eyes</title>
+<link rel="shortcut icon" href="https://holly2029.github.io/favicon.ico?v=1617430023573">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://holly2029.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="5分钟了解机器学习 | The world in Holly&#39;s eyes - Atom Feed" href="https://holly2029.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+[TOC]
+借用周志华教授经典的西瓜例子，我们先简单理解机器学习是在做什么：
+
+当你傍晚在校园里散步，看到微湿的路面，迎面吹来和煦的微风，抬头看见天边的晚霞，心想：明天又是个好天气。
+当你走到水果店，挑了个色泽青绿、根蒂蜷缩、敲起来声音浊..." />
+    <meta name="keywords" content="管理学" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://holly2029.github.io">
+  <img class="avatar" src="https://holly2029.github.io/images/avatar.png?v=1617430023573" alt="">
+  </a>
+  <h1 class="site-title">
+    The world in Holly&#39;s eyes
+  </h1>
+  <p class="site-description">
+    这是一个关注管理学和传播学的个人网页，提供一个商科硕士的学习成果和经验总结。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://holly2029.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/tags" class="menu">
+          文章记录
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/index" class="menu">
+          关于作者
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/lei-di-xing-xing" class="menu">
+          类地行星
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              5分钟了解机器学习
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-04-03
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://holly2029.github.io/tag/rNqW4ixEP/" class="post-tag">
+                  # 管理学
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <figure data-type="image" tabindex="1"><img src="https://holly2029.github.io/post-images/1617429452590.jpg" alt="" loading="lazy"></figure>
+<p>[TOC]</p>
+<p>借用周志华教授经典的西瓜例子，我们先简单理解机器学习是在做什么：</p>
+<blockquote>
+<p>当你傍晚在校园里散步，看到微湿的路面，迎面吹来和煦的微风，抬头看见天边的晚霞，心想：明天又是个好天气。<br>
+当你走到水果店，挑了个色泽青绿、根蒂蜷缩、敲起来声音浊响的大西瓜，心想：这个瓜一定皮薄肉厚瓤甜。</p>
+</blockquote>
+<p>为什么可以做出这样的有效判断呢？这是因为，我们已经积累了许多经验，通过对经验的利用，就能对新情况做出有效的决策。如果这个过程是由计算机完成的，就是机器学习。</p>
+<h3 id="什么是机器学习">什么是机器学习？</h3>
+<p>机器学习是人工智能（artificial intelligence）研究发展到一定阶段的必然产物。</p>
+<p><strong>那么第一个问题是，什么是人工智能？</strong> 同人类智能相比，人工智能就是人工制造的智能，是用机器来模拟人类智能行为的技术。人工智能的智能行为分为记忆、学习、推理、决策、行动，这里的学习行为就是通过机器学习来完成的。</p>
+<p><strong>具体而言，机器学习是研究如何通过计算的手段，利用经验来改善系统自身的性能。</strong> 在计算机系统中，“经验”通常以“数据”的形式存在，因此机器学习研究的主要内容，是关于在计算机上从数据中产生“模型”的算法，即“学习算法”。机器学习的目的是使得学得的模型能很好地适用于“新样本”，而不是仅仅在训练样本上工作得很好。</p>
+<p><strong>学习算法起到什么作用？</strong> 我们将经验数据提供给学习算法，它能够基于数据产生模型；在面对新的情况时，模型会提供相应的判断。</p>
+<h3 id="机器学习的黑话科普">机器学习的黑话科普</h3>
+<p>接下来我们来了解一些基本术语。为了方便理解，我们将机器学习中的属性（feature）、标记（label）、学习（learning）类比为计量经济学中的x、y、用x估计y。</p>
+<p><strong>数据集：</strong> 一组记录的集合。<br>
+<strong>示例/样本：</strong> 指每条记录，是关于某个事件或对象的描述。<br>
+<strong>属性/特征：</strong> 反映事件或对象在某方面的表现或性质的事项。即计量经济学中的x。<br>
+<strong>标记：</strong> 关于结果的信息。即计量经济学中的y。<br>
+<strong>学习/训练：</strong> 从数据中学得模型的过程，这个过程通过执行某个学习算法来完成。即计量经济学中的用x估计y。<br>
+<strong>泛化能力：</strong> 学得模型适用于新样本的能力，称为泛化能力。</p>
+<h3 id="机器学习有哪些算法">机器学习有哪些算法？</h3>
+<p>按照样本是否有标记，机器学习主流的学习任务可以分成有监督学习、无监督学习和半监督学习。<br>
+样本有标记的，是有监督学习；样本没有标记的，是无监督学习；既有标记样本，也有未标记样本的，是半监督学习。类比计量经济学，这里的标记可以理解为是否有y。</p>
+<p><strong>有监督学习</strong></p>
+<p>有监督学习的目的是用自变量x预测因变量y。根据y的特征，可以分为回归和分类。<br>
+如果y是连续的，是回归。常见的算法有线性回归。<br>
+如果y是离散的，则是分类，常见的算法有判别分析、逻辑回归、朴素贝叶斯、决策树、随机森林、支持向量机、神经网络等。</p>
+<p><strong>无监督学习</strong></p>
+<p>无监督学习的目的是寻找x之间的规律。常见的算法有关联分析、主成分分析、聚类分析等。</p>
+<p>此外还有强化学习、深度学习、集成学习等，由于不能按照是否有标记进行区分，此处暂按不表。</p>
+<h3 id="机器学习的应用">机器学习的应用</h3>
+<p><strong>机器学习在数据分析方面的巨大作用，能够为许多学科提供重要技术支撑。</strong> 比如在商业领域优化库存降低成本，针对用户群设计特殊营销策略；在医疗图像领域生成虚拟样本，标的检测位置加快检测速度等……</p>
+<p><strong>关于人类如何学习的探索。</strong> 机器学习通过建立一些关于学习的计算模型，促进我们理解“人类如何学习”。这无疑是一个有关自我本识的重大问题，具有一定的自然科学探索色彩。</p>
+<h3 id="机器学习面临的挑战">机器学习面临的挑战</h3>
+<p>机器学习在训练和应用时，都会面临高效性挑战，即存储、计算和通信三个方面的<strong>算力挑战</strong> ，开销巨大。现阶段应对高效性挑战主要有两种方案：利用01字符串降低存储的<strong>哈希学习算法</strong> 和<strong>基于多机集群的分布式机器学习</strong> 。</p>
+<h3 id="推荐的阅读书目">推荐的阅读书目</h3>
+<p>[1] 陈强，《机器学习及R应用》，高等教育出版社，2020<br>
+[2] 周志华，《机器学习》，清华大学出版社，2016<br>
+[3] 卡巴科弗，《R语言实战》（第二版），人民邮电出版社，2016<br>
+[4] 薛薇，《R语言数据挖掘》（第二版），中国人民大学出版社，2018</p>
+<h3 id="参考资料">参考资料</h3>
+<p>[1] 周志华，《机器学习》，清华大学出版社，2016<br>
+[2] 杨柳，《R语言数据分析》课程，2021春<br>
+[3] 李武军，《人工智能与智能医疗》课程，2021.1<br>
+图片@小武拉莫</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">什么是机器学习？</a></li>
+<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%BB%91%E8%AF%9D%E7%A7%91%E6%99%AE">机器学习的黑话科普</a></li>
+<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%89%E5%93%AA%E4%BA%9B%E7%AE%97%E6%B3%95">机器学习有哪些算法？</a></li>
+<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BA%94%E7%94%A8">机器学习的应用</a></li>
+<li><a href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%9D%A2%E4%B8%B4%E7%9A%84%E6%8C%91%E6%88%98">机器学习面临的挑战</a></li>
+<li><a href="#%E6%8E%A8%E8%8D%90%E7%9A%84%E9%98%85%E8%AF%BB%E4%B9%A6%E7%9B%AE">推荐的阅读书目</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">参考资料</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://holly2029.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
