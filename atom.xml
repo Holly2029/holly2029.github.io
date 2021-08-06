@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://holly2029.github.io</id>
     <title>The world in Holly&apos;s eyes</title>
-    <updated>2021-08-06T11:18:48.159Z</updated>
+    <updated>2021-08-06T11:22:18.692Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://holly2029.github.io"/>
     <link rel="self" href="https://holly2029.github.io/atom.xml"/>
@@ -23,7 +23,7 @@
 <ul>
 <li>为什么预测很难准确？避不开的非样本问题（2021-01-23）</li>
 <li>近期学习总结：5分钟了解机器学习（2021-04-03）</li>
-<li>是技术革命，而非工业革命：数字技术的前世今生（2021-08-06）</li>
+<li>技术革命，而非工业革命：数字技术的前世今生（2021-08-06）</li>
 </ul>
 <h2 id="传播学">传播学</h2>
 <ul>
