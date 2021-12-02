@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>研究方法可以数字化吗？扎根理论的数字化操作指南（探讨） | The world in Holly&#39;s eyes</title>
+<link rel="shortcut icon" href="https://holly2029.github.io/favicon.ico?v=1638425327184">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://holly2029.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="研究方法可以数字化吗？扎根理论的数字化操作指南（探讨） | The world in Holly&#39;s eyes - Atom Feed" href="https://holly2029.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="记录笔者对于质性研究方法与自然语言处理、知识图谱在文本处理方面相似性的一些发现。
+若有观点不一致之处，欢迎探讨！
+
+
+0 序言
+扎根理论的贡献在于从资料中建构理论，在瀚如烟海的数据中寻找观点。机器学习的目的是从数据中发掘价值，通过大量的数据..." />
+    <meta name="keywords" content="管理学" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://holly2029.github.io">
+  <img class="avatar" src="https://holly2029.github.io/images/avatar.png?v=1638425327184" alt="">
+  </a>
+  <h1 class="site-title">
+    The world in Holly&#39;s eyes
+  </h1>
+  <p class="site-description">
+    这是一个关注管理学和传播学的个人网页，提供一个商科硕士的学习成果和经验总结。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://holly2029.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/tags" class="menu">
+          文章记录
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/index" class="menu">
+          关于作者
+        </a>
+      
+    
+      
+        <a href="https://holly2029.github.io/post/lei-di-xing-xing" class="menu">
+          类地行星
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              研究方法可以数字化吗？扎根理论的数字化操作指南（探讨）
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-12-01
+              </span>
+              <span>
+                8 min read
+              </span>
+              
+                <a href="https://holly2029.github.io/tag/rNqW4ixEP/" class="post-tag">
+                  # 管理学
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>记录笔者对于质性研究方法与自然语言处理、知识图谱在文本处理方面相似性的一些发现。<br>
+若有观点不一致之处，欢迎探讨！</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://holly2029.github.io/post-images/1638424775736.jpg" alt="" loading="lazy"></figure>
+<h1 id="0-序言">0 序言</h1>
+<p>扎根理论的贡献在于从资料中建构理论，在瀚如烟海的数据中寻找观点。机器学习的目的是从数据中发掘价值，通过大量的数据训练、产生模型。从这个角度来看，二者有一定共性，都是从数据开始，经黑箱，得到一个可以用于预测的结果。那么，倘若扎根理论可以借用机器学习的方法对数据进行处理，是否会大大提高编码效率，又是否可以通过增大数据量，大大提高模型的准确度？<br>
+笔者经过近期的学习，并与几位老师反复探讨，认为扎根理论的部分环节是可以被数字化的。扎根理论作为一种强调研究者抽象思考的理论建构方法，在现阶段机器学习算法水平的限制下，<strong>编码的环节可以被自然语言处理的技术替代；但强调研究者思考的环节（比如属性和维度分析、关联类属等）尚不能被知识图谱的技术替代</strong>。</p>
+<h1 id="1-扎根理论是什么">1 扎根理论是什么</h1>
+<p>管理学领域的研究主要可以分为量化研究和质性研究。质性研究一般由一个宽泛的问题开始，通常没有预先确定的概念。概念是在资料中寻找并建构起来的（科宾，2015，p23）。扎根理论是质性研究的一种研究策略。</p>
+<blockquote>
+<p>质性研究是以<strong>研究者本人</strong>作为研究工具，在自然情境下采用多种资料收集方法，对社会现象进行整体性研究，主要<strong>使用归纳法分析资料和形成理论</strong>，通过与研究对象互动，对其<strong>行为和意义</strong>建构获得<strong>解释性理解</strong>的一种活动（陈向明，2000）。</p>
+</blockquote>
+<h2 id="11-如何运用扎根理论对资料进行分析">1.1 如何运用扎根理论对资料进行分析</h2>
+<p>首先回顾问题，对资料进行一个整体性的提问：这个资料是一个关于什么的研究？<br>
+接着，进行三级编码。</p>
+<h3 id="a一级编码开放式登录">A.一级编码（开放式登录）</h3>
+<p>开放式登录的过程类似一个漏斗，最开始登录的范围比较宽，随后不断缩小范围。</p>
+<ol>
+<li>贴标签。对资料内容进行逐行登录，给每个码号一个初步的命名。命名可以使用当事人的原话，也可以使用研究者自己的语言。相似的现象要用同样的码号。这一步实质上是对访谈文本做语义上的分类。</li>
+<li>类属化。对已有的标签做一次降维，将同类码号提出一个更为抽象的概念。</li>
+<li>属性和维度分析。发展和丰富类属的内涵，形成类属-属性-维度关系。需要注意的是，要尽量减少一个类属中的属性个数m和维度个数n。</li>
+</ol>
+<h3 id="b二级编码核心式登录">B.二级编码（核心式登录）</h3>
+<p>在一级编码抽取得到的所有类属中，选择最主要的作为核心类属，将分析集中到与这个核心类属相关的码号上。</p>
+<ol>
+<li>写故事。在一级编码的基础上进行叙述，形成一个故事。</li>
+<li>形成故事线。使用故事线将所有编码串起。</li>
+<li>找到核心类属。对各类属进行描述，填充需要补充的类属，挑选核心类属，比较得出核心类属与其他类属之间系统的联系。</li>
+</ol>
+<h3 id="c三级编码关联式登录轴心登录">C.三级编码（关联式登录/轴心登录）</h3>
+<p>发现建立类属之间的各种联系。这个联系可以是因果关系、时间先后关系、语义关系、情境关系、相似关系、差异关系、对等关系、类型关系、结构关系、功能关系、策略关系、过程关系。<br>
+在这一步中，研究者每一次只对一个类属进行深度分析，围绕这一个类属寻找相关关系，因此称之为“轴心”。</p>
+<p><strong>关联类属的方法：范式模型</strong><br>
+按照事件流程，范式模型包括了<strong>A因果条件→B现象→C情境条件→D干预条件→E行动/互动策略→F结果</strong>，这6个部分代表了一个完整的事件流程（从开始到结果）。</p>
+<blockquote>
+<p>因果条件：致使某一现象产生或发展的事件、事故、事情<br>
+现象：具有中心地位的观念、事件、事故、事情<br>
+情境条件：从属于某一现象的特定属性，即某现象的属性和维度<br>
+干预条件（中介条件）：某一现象行动时激活的，具有促进/限制功能的功能。<br>
+行动/互助策略：针对某一现象在其可见、特殊的一组条件之下，采取的管理、处置、实施策略。<br>
+结果：行动/互助产生的结果。</p>
+</blockquote>
+<p>范式模型选择B现象作为分析抓手，B现象就是二级编码中的核心类属。那么其他5个部分从哪里出？<br>
+C情境条件是基于B现象的属性和维度构建。其余4个部分来自二级编码的其余类属。因此二级编码中至少要有5个类属。如果不够，需要返回原文重新编码；如果超过，需要筛选或是合并。</p>
+<h1 id="2-知识图谱与自然语言处理">2 知识图谱与自然语言处理</h1>
+<p>自然语言处理是研究如何利用计算机技术对语言文本进行处理和加工的一门学科。<br>
+知识图谱是是对实体（真实世界中的物体、时间或者一些抽象的概念）及其之间相关关系的描述的集合。<br>
+知识图谱通过图的方式建构真实世界，点是实体/概念，边是属性/关系。这个图是通过自然语言抽取出来的。</p>
+<blockquote>
+<p>知识图谱的构建步骤：文本处理、实体识别、关系抽取、构建图谱。<br>
+（此部分内容由lty师哥整理完成。）<br>
+<strong>句子分割（Sentence Segmentation）</strong><br>
+构建知识图的第一步是将文本文档或文章分解成句子，每句话可以再拆分出主语和宾语。当面对海量数据，我们难以实现句子的人工抽取，需要使用实体识别和关系抽取技术。<br>
+<strong>实体识别（Entities Recognition）</strong><br>
+实体识别就是抽取实体，通过词性标签和提取规则抽取实体，实体将作为知识图谱上的“节点”。<br>
+<strong>关系抽取（Extract Relations）</strong><br>
+关系抽取就是提取实体之间的关系，关系将作为知识图谱上的“边”。一般情况下，将句子中的动词提取为实体间的关系。<br>
+<strong>构建图谱</strong><br>
+导入相关库（Import Libraries）<br>
+读取文本数据（Read Data）<br>
+抽取&quot;主语-宾语&quot;对（Entity Pairs Extraction）<br>
+关系抽取（Relation Extraction）<br>
+构建知识图谱（Build a Knowledge Graph）</p>
+</blockquote>
+<h1 id="3-扎根编码与知识图谱的相似性">3 扎根编码与知识图谱的相似性</h1>
+<p>从下表可知，二者思路一致，在操作上有些许区别。<br>
+<img src="https://holly2029.github.io/post-images/1638423355882.png" alt="" loading="lazy"></p>
+<h1 id="4-如何实现扎根理论的数字化">4 如何实现扎根理论的数字化</h1>
+<p>至此，笔者认为，扎根理论的材料分析部分就是自然语言处理（NLP）。具体而言，一级编码的贴标签、类属化工作可以通过自然语言处理的技术实现。</p>
+<p><strong>现有程度：信息化</strong><br>
+目前已有辅助扎根编码的软件：Nvivo。但此软件并没有实现真正的自动编码，只是将过去贴便利贴、手动记录的工作信息化了。</p>
+<p><strong>难点</strong><br>
+1、自然语言处理的数据库多为英文的，尚没有成熟的中文语料库可供使用。<br>
+2、缺少成熟的识别实体和抽取关系的算法，需要自行训练。<br>
+3、语料库的构建和算法的修正工作，需要大量的专业知识。</p>
+<h1 id="5-参考资料">5 参考资料</h1>
+<p>[1]《建构扎根理论：质性研究实践指南》Kathy Charmaz<br>
+[2]《质的研究方法与社会科学研究》陈向明<br>
+[3]《怎样做好一项研究——小规模社会研究指南》Martyn Denscombe<br>
+[4]《质性研究：反思与评论》陈向明<br>
+[5] <a href="https://zhuanlan.zhihu.com/p/71128505">知识图谱</a><br>
+[6] <a href="https://zhuanlan.zhihu.com/p/88745411">Neo4J操作指南</a><br>
+图片@小武拉莫</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#0-%E5%BA%8F%E8%A8%80">0 序言</a></li>
+<li><a href="#1-%E6%89%8E%E6%A0%B9%E7%90%86%E8%AE%BA%E6%98%AF%E4%BB%80%E4%B9%88">1 扎根理论是什么</a>
+<ul>
+<li><a href="#11-%E5%A6%82%E4%BD%95%E8%BF%90%E7%94%A8%E6%89%8E%E6%A0%B9%E7%90%86%E8%AE%BA%E5%AF%B9%E8%B5%84%E6%96%99%E8%BF%9B%E8%A1%8C%E5%88%86%E6%9E%90">1.1 如何运用扎根理论对资料进行分析</a>
+<ul>
+<li><a href="#a%E4%B8%80%E7%BA%A7%E7%BC%96%E7%A0%81%E5%BC%80%E6%94%BE%E5%BC%8F%E7%99%BB%E5%BD%95">A.一级编码（开放式登录）</a></li>
+<li><a href="#b%E4%BA%8C%E7%BA%A7%E7%BC%96%E7%A0%81%E6%A0%B8%E5%BF%83%E5%BC%8F%E7%99%BB%E5%BD%95">B.二级编码（核心式登录）</a></li>
+<li><a href="#c%E4%B8%89%E7%BA%A7%E7%BC%96%E7%A0%81%E5%85%B3%E8%81%94%E5%BC%8F%E7%99%BB%E5%BD%95%E8%BD%B4%E5%BF%83%E7%99%BB%E5%BD%95">C.三级编码（关联式登录/轴心登录）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86">2 知识图谱与自然语言处理</a></li>
+<li><a href="#3-%E6%89%8E%E6%A0%B9%E7%BC%96%E7%A0%81%E4%B8%8E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E7%9B%B8%E4%BC%BC%E6%80%A7">3 扎根编码与知识图谱的相似性</a></li>
+<li><a href="#4-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%89%8E%E6%A0%B9%E7%90%86%E8%AE%BA%E7%9A%84%E6%95%B0%E5%AD%97%E5%8C%96">4 如何实现扎根理论的数字化</a></li>
+<li><a href="#5-%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">5 参考资料</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://holly2029.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
