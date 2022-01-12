@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://holly2029.github.io</id>
     <title>The world in Holly&apos;s eyes</title>
-    <updated>2021-12-02T06:29:01.832Z</updated>
+    <updated>2022-01-12T06:06:39.835Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://holly2029.github.io"/>
     <link rel="self" href="https://holly2029.github.io/atom.xml"/>
     <subtitle>这是一个关注管理学和传播学的个人网页，提供一个商科硕士的学习成果和经验总结。</subtitle>
     <logo>https://holly2029.github.io/images/avatar.png</logo>
     <icon>https://holly2029.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, The world in Holly&apos;s eyes</rights>
+    <rights>All rights reserved 2022, The world in Holly&apos;s eyes</rights>
     <entry>
         <title type="html"><![CDATA[Catalogue]]></title>
         <id>https://holly2029.github.io/post/wen-zhang-ji-lu/</id>
